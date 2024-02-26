@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 80px;
+    height: 80px;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+}
+
+.logo {
+    font-size: 30px;
+}
+.logo .fa-heartbeat{
+    color: var(--green);
+}
+.logo a{
+    color: var(--black);
+}
+nav ul{
+    display: flex;
+    gap: 15px;
+}
+
+nav ul li a{
+    font-size: 20px;
+    color: var(--light-color);
+    transition: 0.4s;
+}
+nav ul li a:hover{
+    color: var(--green);
+}
+
+.bars{
+    display: none;
+    color: var(--green);
+    background-color: #c0c0c0;
+    padding: 5px 7px;
+    font-size: 25px;
+}
+
+@media screen and (max-width:912px) {
+    nav ul{
+        gap: 12px;
+    }
+    nav ul li a{
+        font-size: 18px;
+    }
+}
+@media screen and (max-width:768px) {
+    .bars{
+        display: block;
+    }
+    nav ul{
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        right: 100px;
+        top: 100px;
+        width: 100%;
+        max-width: 250px;
+        transform: scale(0, 0);
+        transition: 0.5s;
+        padding: 15px;
+        border: 2.5px solid var(--green);
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+    }
+    .bars i:nth-child(2){
+        display: none;
+    }
+    .active i:nth-child(2){
+        display: block;
+    }
+    .active i:nth-child(1){
+        display: none;
+    }
+    nav .toggle ul{
+        transform: scale(1,1);
+    }
+}
+
+@media screen and (max-width:480px) {
+    nav{
+        padding: 0px 20px;
+    }
+    .logo {
+        font-size: 25px;
+    }
+    .bars{
+        padding: 5px 7px;
+        font-size: 20px;
+    }
+    nav ul{
+        right: 20px;
+    }
+}   
