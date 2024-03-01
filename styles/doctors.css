@@ -1,0 +1,83 @@
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+}
+.doctors-section{
+    background-color: #f5f5f5;
+    padding: 20px 0px;
+}
+.doctors{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px;
+}
+.doctors-box{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    border: 2px solid var(--green);
+    width: 350px;
+    height: 400px;
+    box-shadow: 3px 3px 1px 1px #16a0845a;
+    border-radius: 10px;
+}
+.doctors-box img{
+    width: 100%;
+    max-width: 200px;
+    border: 2px solid var(--green);
+    border-radius: 10px;
+}
+.doctors-box h1{
+    font-weight: 900;
+}
+.doctors-box p{
+    color: var(--green);
+    letter-spacing: 2px;
+}
+.doctors-box .social-icons{
+    display: flex;
+    gap: 15px;
+}
+.doctors-box .social-icons span{
+    color: var(--green);
+    background-color: white;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    padding: 10px;
+    transition: 0.4s;
+    font-size: 20px;
+}
+.doctors-box .social-icons span:hover{
+    color:white;
+    background-color: var(--green);
+}
+
+@media screen and (max-width:768px) {
+    .doctors-box{
+        width: 300px;
+        height: 350px;
+    }
+    .doctors-box img{
+        width: 100%;
+        max-width: 180px;
+    }
+    .doctors-box .social-icons span{
+        color: var(--green);
+        background-color: white;
+        border: 1px solid var(--green);
+        border-radius: 5px;
+        padding: 10px;
+        transition: 0.4s;
+        font-size: 15px;
+    }
+}
+@media screen and (max-width:500px) {
+   
+}
