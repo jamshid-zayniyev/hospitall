@@ -1,0 +1,134 @@
+:root{
+    --green:#16a085;
+    --black:#444;
+    --light-color:#777;
+}
+.booking-section{
+    padding: 20px 0;
+}
+.booking{
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+}
+.booking-img{
+    width: 50%;
+}
+.booking-form{
+    width: 50%;
+    margin: 0 auto;
+}
+.booking-form form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    align-items: center;
+    border: 2px solid var(--green);
+    padding: 20px;
+    border-radius: 5px;
+
+}
+form input{
+    outline: none;
+    height: 45px;
+    width: 100%;
+    border: 2px solid var(--green);
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 18px;
+
+}
+.booking-form form h1{
+    font-size: 30px;
+    color: var(--black);
+}
+@media screen and (max-width:1024px) {
+    form input{
+        outline: none;
+        height: 35px;
+        width: 100%;
+        border: 2px solid var(--green);
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 16px;
+    
+    }
+    .booking-form form h1{
+        font-size: 25px;
+        color: var(--black);
+    }
+}
+@media screen and (max-width:768px) {
+    .booking{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    form input{
+        outline: none;
+        height: 35px;
+        width: 100%;
+        border: 2px solid var(--green);
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 16px;
+    
+    }
+    .booking-form form h1{
+        font-size: 25px;
+        color: var(--black);
+    }
+    .booking-img{
+        width: 90%;
+    }
+    .booking-form{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+@media screen and (max-width:600px) {
+    .booking{
+        padding: 20px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .booking-form form{
+        gap: 15px;
+        padding: 10px;
+        border-radius: 5px;
+    
+    }
+    form input{
+        outline: none;
+        height: 30px;
+        width: 100%;
+        border: 2px solid var(--green);
+        border-radius: 5px;
+        padding: 5px;
+        font-size: 12px;
+    
+    }
+    .booking-form form h1{
+        font-size: 20px;
+        color: var(--black);
+    }
+    .booking-img{
+        width: 90%;
+    }
+    .booking-form{
+        width: 90%;
+        margin: 0 auto;
+    }
+}
